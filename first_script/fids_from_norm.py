@@ -12,6 +12,7 @@ DB_CONFIG = {
     'port': 'your_port'
 }
 
+
 # Логика обработки данных
 def process_and_insert_data():
     try:
