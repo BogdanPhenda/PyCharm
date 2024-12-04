@@ -94,26 +94,26 @@ def process_and_insert_data():
             WHEN new.block_uuid = '04c6223f-24fc-412b-bf49-2adcd8ddccc8' AND new.rooms = '3' THEN '8c89d8c7-7ea0-4412-a0cb-44cb12914309'::uuid
             WHEN new.block_uuid = '04c6223f-24fc-412b-bf49-2adcd8ddccc8' AND new.rooms = '4' THEN '1102e5b0-cc60-45dc-bc86-520c1f48f085'::uuid
             WHEN new.block_uuid = '04c6223f-24fc-412b-bf49-2adcd8ddccc8' AND new.rooms = '5' THEN '80033d77-b52a-44b9-a630-8f5243b93553'::uuid
-            WHEN new.rooms = '0' and type 'Квартира' THEN '019f2104-628f-468a-a368-2df80e0b3247'::uuid
-            WHEN new.rooms = '1' and type 'Квартира' THEN 'b35e9518-4d9d-4e58-8b4a-51d7aa42d7ec'::uuid
-            WHEN new.rooms = '2' and type 'Квартира' THEN '8c89d8c7-7ea0-4412-a0cb-44cb12914309'::uuid
-            WHEN new.rooms = '3' and type 'Квартира' THEN '1102e5b0-cc60-45dc-bc86-520c1f48f085'::uuid
-            WHEN new.rooms = '4' and type 'Квартира' THEN '80033d77-b52a-44b9-a630-8f5243b93553'::uuid
-            WHEN new.rooms = '5' and type 'Квартира' THEN 'e03ab11a-1d40-459e-8918-69d2a72f19bb'::uuid
-            WHEN new.rooms = '6' and type 'Квартира' THEN 'b1e0f483-af4a-4e22-9944-2e49dd148303'::uuid
-            WHEN new.rooms = '7' and type 'Квартира' THEN 'f61066c2-9dc4-49d8-93fd-485f979450dc'::uuid
-            WHEN new.rooms = '8' and type 'Квартира' THEN '41acd6ed-b2a9-48da-b9e7-a45b7d645402'::uuid
-            WHEN new.rooms = '9' and type 'Квартира' THEN 'c2e97799-25d6-459e-a88c-ff16eee1f3a2'::uuid
-            WHEN new.rooms = '0' and type 'Апартаменты' THEN '362b73de-c175-4479-a76c-c2ee422b89f5'::uuid
-            WHEN new.rooms = '1' and type 'Апартаменты' THEN '84203563-c482-45ee-8388-4968fa947834'::uuid
-            WHEN new.rooms = '2' and type 'Апартаменты' THEN '6f6a9f85-bfb6-4785-acb8-d0877124ee49'::uuid
-            WHEN new.rooms = '3' and type 'Апартаменты' THEN 'aacf7549-1286-421c-8280-a5ea73729e56'::uuid
-            WHEN new.rooms = '4' and type 'Апартаменты' THEN '9cf2f8f2-b42a-459a-bd37-8d0bd053a6db'::uuid
-            WHEN new.rooms = '5' and type 'Апартаменты' THEN 'f7e3fbcc-98dc-4cfa-a799-e63c14c00690'::uuid
-            WHEN new.rooms = '6' and type 'Апартаменты' THEN 'a3be9f2b-5b1a-4a25-bbb7-956a73a0b469'::uuid
-            WHEN new.rooms = '7' and type 'Апартаменты' THEN 'dfde23eb-a9ba-49b3-8ac2-6481864b6f51'::uuid
-            WHEN new.rooms = '8' and type 'Апартаменты' THEN '0a060ad3-06ae-4135-935a-0fc5088ff92c'::uuid
-            WHEN new.rooms = '9' and type 'Апартаменты' THEN '9711fe08-37c2-441b-b5fc-c8b5c79749e5'::uuid
+            WHEN new.rooms = '0' and type = 'Квартира' THEN '019f2104-628f-468a-a368-2df80e0b3247'::uuid
+            WHEN new.rooms = '1' and type = 'Квартира' THEN 'b35e9518-4d9d-4e58-8b4a-51d7aa42d7ec'::uuid
+            WHEN new.rooms = '2' and type = 'Квартира' THEN '8c89d8c7-7ea0-4412-a0cb-44cb12914309'::uuid
+            WHEN new.rooms = '3' and type = 'Квартира' THEN '1102e5b0-cc60-45dc-bc86-520c1f48f085'::uuid
+            WHEN new.rooms = '4' and type = 'Квартира' THEN '80033d77-b52a-44b9-a630-8f5243b93553'::uuid
+            WHEN new.rooms = '5' and type = 'Квартира' THEN 'e03ab11a-1d40-459e-8918-69d2a72f19bb'::uuid
+            WHEN new.rooms = '6' and type = 'Квартира' THEN 'b1e0f483-af4a-4e22-9944-2e49dd148303'::uuid
+            WHEN new.rooms = '7' and type = 'Квартира' THEN 'f61066c2-9dc4-49d8-93fd-485f979450dc'::uuid
+            WHEN new.rooms = '8' and type = 'Квартира' THEN '41acd6ed-b2a9-48da-b9e7-a45b7d645402'::uuid
+            WHEN new.rooms = '9' and type = 'Квартира' THEN 'c2e97799-25d6-459e-a88c-ff16eee1f3a2'::uuid
+            WHEN new.rooms = '0' and type = 'Апартаменты' THEN '362b73de-c175-4479-a76c-c2ee422b89f5'::uuid
+            WHEN new.rooms = '1' and type = 'Апартаменты' THEN '84203563-c482-45ee-8388-4968fa947834'::uuid
+            WHEN new.rooms = '2' and type = 'Апартаменты' THEN '6f6a9f85-bfb6-4785-acb8-d0877124ee49'::uuid
+            WHEN new.rooms = '3' and type = 'Апартаменты' THEN 'aacf7549-1286-421c-8280-a5ea73729e56'::uuid
+            WHEN new.rooms = '4' and type = 'Апартаменты' THEN '9cf2f8f2-b42a-459a-bd37-8d0bd053a6db'::uuid
+            WHEN new.rooms = '5' and type = 'Апартаменты' THEN 'f7e3fbcc-98dc-4cfa-a799-e63c14c00690'::uuid
+            WHEN new.rooms = '6' and type = 'Апартаменты' THEN 'a3be9f2b-5b1a-4a25-bbb7-956a73a0b469'::uuid
+            WHEN new.rooms = '7' and type = 'Апартаменты' THEN 'dfde23eb-a9ba-49b3-8ac2-6481864b6f51'::uuid
+            WHEN new.rooms = '8' and type = 'Апартаменты' THEN '0a060ad3-06ae-4135-935a-0fc5088ff92c'::uuid
+            WHEN new.rooms = '9' and type = 'Апартаменты' THEN '9711fe08-37c2-441b-b5fc-c8b5c79749e5'::uuid
             ELSE null
             END AS flats_type_uuid,
             floors_in_section::bigint, 
