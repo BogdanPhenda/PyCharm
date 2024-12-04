@@ -114,7 +114,7 @@ def process_and_insert_data():
             WHEN new.rooms = '7' and type 'Апартаменты' THEN 'dfde23eb-a9ba-49b3-8ac2-6481864b6f51'::uuid
             WHEN new.rooms = '8' and type 'Апартаменты' THEN '0a060ad3-06ae-4135-935a-0fc5088ff92c'::uuid
             WHEN new.rooms = '9' and type 'Апартаменты' THEN '9711fe08-37c2-441b-b5fc-c8b5c79749e5'::uuid
-                ELSE null
+            ELSE null
             END AS flats_type_uuid,
             floors_in_section::bigint, 
             building_uuid,
